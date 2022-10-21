@@ -1,6 +1,6 @@
 //Receive character data in message and turn into sheet
 window.addEventListener("message", function (event) {
-  console.log(event.data)
+  
   
   checkContent("input", "name", "charname")[0].value = event.data.name;
   checkContent("input", "name", "classlevel")[0].value = event.data.classLevel;
@@ -191,7 +191,7 @@ window.addEventListener("message", function (event) {
   checkContent('textarea','name','notes-l')[0].value = event.data.treasure
   checkContent('input','name','experiencepoints')[0].value = event.data.xp
   
-  console.log(event.data);
+  
 });
 
 $(".stat").bind("input", function () {
