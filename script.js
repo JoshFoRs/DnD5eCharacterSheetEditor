@@ -189,6 +189,7 @@ window.addEventListener("message", function (event) {
   checkContent('input','name','weightcarried')[0].value = event.data.carriedWeight
   checkContent('textarea','name','organizations')[0].value = event.data.allies
   checkContent('textarea','name','notes-l')[0].value = event.data.treasure
+  checkContent('input','name','experiencepoints')[0].value = event.data.xp
   
   console.log(event.data);
 });
