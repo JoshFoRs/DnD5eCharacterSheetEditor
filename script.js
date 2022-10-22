@@ -1,6 +1,12 @@
 //Receive character data in message and turn into sheet
 window.addEventListener("message", function (event) {
   
+  gtag('config', 'G-5MKV2DT9KR', {
+  'custom_map': {'dimension1': 'Character'}
+  });
+
+  // Sends the custom dimension to Google Analytics.
+  gtag('event', 'New Character', {'Character': event.data});
   
   checkContent("input", "name", "charname")[0].value = event.data.name;
   checkContent("input", "name", "classlevel")[0].value = event.data.classLevel;
