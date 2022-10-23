@@ -6,7 +6,7 @@ window.addEventListener("message", function (event) {
   });
 
   // Sends the custom dimension to Google Analytics.
-  gtag('event', 'New Character', {'Character': event.data});
+  gtag('event', 'New Character', {'Character': event.data.name+": "+event.data.classLevel+" | "+event.data.race});
   
   checkContent("input", "name", "charname")[0].value = event.data.name;
   checkContent("input", "name", "classlevel")[0].value = event.data.classLevel;
