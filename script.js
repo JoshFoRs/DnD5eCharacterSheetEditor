@@ -1,10 +1,10 @@
 //Receive character data in message and turn into sheet
 window.addEventListener("message", function (event) {
-  if(event.data = ""){
+  if(event.data.length<10){
     return
   }
   else{}
-  console.log(event)
+  console.log(event.data)
   gtag('config', 'G-5MKV2DT9KR', {
   'custom_map': {'dimension1': 'Character'}
   });
