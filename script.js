@@ -1,6 +1,6 @@
 //Receive character data in message and turn into sheet
 window.addEventListener("message", function (event) {
-  
+  console.log(event)
   gtag('config', 'G-5MKV2DT9KR', {
   'custom_map': {'dimension1': 'Character'}
   });
