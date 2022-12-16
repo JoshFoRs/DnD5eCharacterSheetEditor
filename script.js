@@ -4,7 +4,6 @@ window.addEventListener("message", function (event) {
     return
   }
   else{}
-  console.log(event.data)
   gtag('config', 'G-5MKV2DT9KR', {
   'custom_map': {'dimension1': 'Character'}
   });
