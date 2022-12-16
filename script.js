@@ -16,10 +16,13 @@ window.addEventListener("message", function (event) {
   var saveAmount = checkContent("div", "class", "saves")[0].children[0]
     .childElementCount;
   for (var i = 0; i < saveAmount; i++) {
+    try{
     if (event.data.saves[i].checked) {
       checkContent("input", "name", "save-prof", false)[i].checked = true;
     } else {
     }
+    }
+    catch{}
     checkContent("div", "class", "saves")[0].children[0].children[
       i
     ].children[1].value = event.data.saves[i].value;
